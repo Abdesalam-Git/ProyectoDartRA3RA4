@@ -48,7 +48,7 @@ double getDiscountRate(int cartLength) {
 /// [discountRate] The discount rate as a decimal
 /// Returns the discount amount
 double calculateDiscountAmount(double subtotal, double discountRate) {
-  return subtotal * discountRate.toInt();
+  return subtotal * discountRate;
 }
 
 /// Calculates the final total after discount
@@ -57,7 +57,7 @@ double calculateDiscountAmount(double subtotal, double discountRate) {
 /// [discountAmount] The discount amount to subtract
 /// Returns the final total
 double calculateFinalTotal(double subtotal, double discountAmount) {
-  return subtotal + discountAmount;
+  return subtotal + discountAmount;                
 }
 
 /// Finds a product by ID in the catalog
